@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Background and Page Setup */
+        body {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffebf0, #f8c3d9);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Container */
+        .container {
+            max-width: 600px;
+            width: 90%;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Text Styles */
+        h1, h2 {
+            font-family: 'Dancing Script', cursive;
+            color: #b21f5c;
+        }
+        p1, p2, p3 {
+            font-size: 18px;
+            color: #333;
+        }
+        p3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 19px;
+        }
+        p2 {
+            font-size: 14px;
+        }
+
+        /* Icons */
+        .details {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            position: relative;
+        }
+        .icons::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #b21f5c, transparent);
+        }
+        .icons div {
+            text-align: center;
+            position: relative;
+            flex: 1;
+        }
+        .icons div::after {
+            content: '';
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            width: 1px;
+            height: 20px;
+            background: #b21f5c;
+            transform: translateX(-50%);
+        }
+        .icons img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .icons p {
+            margin: 5px 0;
+        }
+        .date-small {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #b21f5c;
+            margin: 2px 0;
+        }
+        .date-large {
+            font-size: 2.5rem;
+            line-height: 1;
+            color: #b21f5c;
+            font-weight: bold;
+            margin: 2px 0;
+        }
+        .icon-small {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #b21f5c;
+        }
+        .icon-large {
+            font-size: 1.2rem;
+            line-height: 1;
+            color: #b21f5c;
+            font-weight: bold;
+        }
+
+        /* Flower Shower Animation */
+        .flower {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            opacity: 0.8;
+            animation: fall linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100vh) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 480px) {
+            .icons {
+                flex-wrap: wrap;
+            }
+            .icons div {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Flower Animation -->
+    <script>
+        function createFlowers() {
+            const colors = ['#ff5c8a', '#ffb6c1', '#ff99cc', '#e6005c', '#ffa6c9']; 
+            for (let i = 0; i < 15; i++) {
+                let flower = document.createElement('div');
+                flower.classList.add('flower');
+                document.body.appendChild(flower);
+
+                let size = Math.random() * 20 + 10;
+                let leftPosition = Math.random() * 100;
+                let duration = Math.random() * 5 + 5;
+
+                flower.style.width = `${size}px`;
+                flower.style.height = `${size}px`;
+                flower.style.left = `${leftPosition}vw`;
+                flower.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                flower.style.animationDuration = `${duration}s`;
+            }
+        }
+        createFlowers();
+    </script>
+
+    <!-- Wedding Invitation Content -->
+    <div class="container">
+        <p3>The Lord has done great things for us, and we are filled with joy <br> -Psalms 126:3</p3> <br> <br>
+        <p1>Mr. Babu John & Mrs. Darly Babu</p1> <br>
+        <p2>Poyyakkaran House, Paulsonpady</p2> <br> <br> 
+        <p3>cordially invite your presence and prayers with family at the</p3> <br> <br>
+        <p1>HOLY MATRIMONY OF OUR SON</p1>
+        <h1>Christo Babu</h1><h1> weds</h1><h1>Alna Francis</h1>
+        <p1>D/o Mr. Francis K J & Mrs. Telna Francis</p1> <br>
+        <p2>Kunnathoor House, Malapallipuram</p2>
+        
+        <div class="icons">
+            <div>
+                <img src="calendar-icon.png" alt="Date">
+                <p class="date-small">Wednesday</p>
+                <p class="date-large">30</p>
+                <p class="date-small">April 2025</p>
+            </div>
+            <div>
+                <img src="clock-icon.png" alt="Time">
+                <p class="icon-small">Holy</p>
+                <p class="icon-large">Mass</p>
+                <p class="icon-small">@ 10:30 AM</p>
+            </div>
+            <div>
+                <img src="church-icon.png" alt="Venue">
+                <p class="icon-small">St. John The</p>
+                <p class="icon-large">Baptist</p>
+                <p class="icon-small">Church, Moonnumury</p>
+            </div>
+            <div>
+                <img src="dine-icon.png" alt="Reception">
+                <p class="icon-small">St. John The</p>
+                <p class="icon-large">Reception</p>
+                <p class="icon-small">Hall, Moonnumury</p>
+            </div>
+        </div>
+        <p3 style="margin-top: 20px; font-style: italic;">Sharing the Happiness: Christin & Chris</p3>
+    </div>
+
+</body>
+</html>
