@@ -1,10 +1,7 @@
-# chrisbabu9.github.io
-This is my personal portfolio website.
-
-<h1 align="center">Hi there, I'm [Your Name] 👋</h1>
+<h1 align="center">Hi there, I'm Chris 👋</h1>
 
 <p align="center">
-  <a href="https://github.com/yourusername">
+  <a href="https://github.com/chrisbabu9">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=435&lines=Software+Developer;Open+Source+Enthusiast;Tech+Lover;Lifelong+Learner" alt="Typing SVG" />
   </a>
 </p>
@@ -13,11 +10,10 @@ This is my personal portfolio website.
 
 ### 👨‍💻 About Me
 
-- 🔭 I’m currently working on **[Your Project/Job]**
-- 🌱 I’m currently learning **[New Tech or Skill]**
-- 👯 I’m looking to collaborate on **Open Source Projects**
+- 🔭 I’m currently working on **ML Projects**
+- 🌱 I’m currently learning **Java**
 - 💬 Ask me about **Web Dev, JavaScript, Python, or anything tech!**
-- 📫 How to reach me: **[your.email@example.com]**
+- 📫 How to reach me: **chrisbabu9@gmail.com**
 - ⚡ Fun fact: *I can make a website faster than I make my coffee ☕*
 
 ---
@@ -38,9 +34,9 @@ This is my personal portfolio website.
 ### 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=chrisbabu9&show_icons=true&theme=radical" alt="GitHub Stats" />
   <br />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=radical" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=chrisbabu9&theme=radical" alt="GitHub Streak" />
 </p>
 
 ---
@@ -48,20 +44,21 @@ This is my personal portfolio website.
 ### 🌐 Connect with Me
 
 <p align="left">
-  <a href="https://www.linkedin.com/in/yourname/" target="_blank">
+  <a href="https://www.linkedin.com/in/chrisbabu/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
   </a>
-  <a href="mailto:your.email@example.com">
+  <a href="mailto:chrisbabu9@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://twitter.com/yourusername">
+  <a href="https://twitter.com/chrisbabu">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white" />
   </a>
 </p>
 
 ---
 
-<!-- Optional: Snake animation of contributions -->
+### 🐍 Contribution Snake
+
 <p align="center">
-  <img src="https://github.com/yourusername/yourusername/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <img src="dist/github-snake.svg" alt="Snake animation" />
 </p>
