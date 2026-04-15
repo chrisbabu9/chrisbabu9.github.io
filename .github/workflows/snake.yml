@@ -2,17 +2,21 @@ name: Generate Snake
 
 on:
   schedule:
-    # Runs automatically at midnight every day
+    # Runs automatically at midnight UTC every day
     - cron: "0 0 * * *" 
-  workflow_dispatch: # Allows you to run it manually
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
       
-      - uses: Platane/snk@v3
+      - name: Generate the Snake Animation
+        uses: Platane/snk@v3
         with:
           github_user_name: chrisbabu9
           outputs: |
@@ -20,10 +24,10 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
             
-      - name: Push to repo
+      - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: main
+          target_branch: output # Pushes to a new 'output' branch to protect your main website files
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
