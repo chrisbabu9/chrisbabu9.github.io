@@ -60,5 +60,5 @@
 ### 🐍 Contribution Snake
 
 <p align="center">
-  <img src="dist/github-snake.svg" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/chrisbabu9/chrisbabu9.github.io/output/github-snake.svg" alt="Snake animation" />
 </p>
