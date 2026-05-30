@@ -10,8 +10,8 @@
 
 ### 👨‍💻 About Me
 
-- 🔭 I’m currently working on **ML Projects**
-- 🌱 I’m currently learning **Java**
+- 🔭 I’m currently working on **Web Projects**
+- 🌱 I’m currently learning **Django**
 - 💬 Ask me about **Web Dev, JavaScript, Python, or anything tech!**
 - 📫 How to reach me: **chrisbabu9@gmail.com**
 - ⚡ Fun fact: *I can make a website faster than I make my coffee ☕*
@@ -44,7 +44,7 @@
 ### 🌐 Connect with Me
 
 <p align="left">
-  <a href="https://www.linkedin.com/in/chrisbabu/" target="_blank">
+  <a href="https://www.linkedin.com/in/chris-babu/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:chrisbabu9@gmail.com">
