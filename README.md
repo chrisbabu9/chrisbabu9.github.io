@@ -50,8 +50,8 @@
   <a href="mailto:chrisbabu9@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://twitter.com/chrisbabu">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white" />
+  <a href="https://instagram.com/chris_babu_">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=Instagram&logoColor=white" />
   </a>
 </p>
 
