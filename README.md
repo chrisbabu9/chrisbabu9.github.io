@@ -33,7 +33,7 @@
 
 ### 📈 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-streak-stats-eight.vercel.app?user=chrisbabu9&theme=radical" alt="GitHub Streak" />
+  [![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)](https://git.io/streak-stats)
 </p>
 
 ---
