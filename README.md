@@ -36,6 +36,8 @@
   <img src="https://github-readme-stats.vercel.app/api?username=chrisbabu9&show_icons=true&theme=radical" alt="GitHub Stats" />
   <br />
   <img src="https://streak-stats.demolab.com?user=chrisbabu9&theme=radical" alt="GitHub Streak" />
+  <br />
+  <img src="https://github-readme-streak-stats-eight.vercel.app?user=chrisbabu9&theme=radical" alt="GitHub Streak" />
 </p>
 
 ---
@@ -59,5 +61,5 @@
 ### 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/chrisbabu9/chrisbabu9.github.io/output/github-snake.svg?v=2" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/chrisbabu9/chrisbabu9.github.io/output/github-snake.svg?v=3" alt="Snake animation" />
 </p>
