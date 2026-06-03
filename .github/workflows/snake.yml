@@ -3,36 +3,37 @@ name: Generate Snake
 on:
   schedule:
     - cron: "0 0 * * *" 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch: 
 
-# Grants necessary permissions to the GITHUB_TOKEN
 permissions:
-  contents: write # Needed to push the snake to the output branch
-  pages: write    # Needed to trigger the GitHub Pages deployment
+  contents: write
+  pages: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       - name: Generate the Snake Animation
         uses: Platane/snk@v3
         with:
           github_user_name: chrisbabu9
+          # CORRECT SYNTAX: Inside the 'with' block, using your new PAT
+          github_token: ${{ secrets.SNAKE_TOKEN }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
             
       - name: Push to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output 
           build_dir: dist
         env:
+          # This still uses the default token because it just needs to push to this repo
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Trigger GitHub Pages rebuild
