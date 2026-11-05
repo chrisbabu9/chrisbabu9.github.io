@@ -1,0 +1,12 @@
+---
+---
+@import "{{ site.theme }}";
+
+/*
+ * Primer adds the site title as the first direct H1 in .markdown-body.
+ * Hide only that generated heading. The README's own headings, widgets,
+ * and the site's HTML/SEO title remain unchanged.
+ */
+.markdown-body > h1:first-child {
+  display: none;
+}
